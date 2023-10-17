@@ -1,16 +1,16 @@
 // #Js Simon
 // variabili
 
-const randomNumbersArray = getArrayOfRandomNumberBetween(1, 100, 5)
-console.log(randomNumbersArray)
+let randomNumbersArray;
 
-const startBtnDOMElement = document.querySelector('.start-btn')
+const startBtnDOMElement = document.querySelector('.start-btn');
 console.log(startBtnDOMElement)
 
 
 // Al click stampo i numeri in pagina
 
 startBtnDOMElement.addEventListener('click', function(){
+    randomNumbersArray = getArrayOfRandomNumberBetween(1, 100, 5)
     printInPage('.random-numbers', randomNumbersArray)
 })
 
